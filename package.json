@@ -1,0 +1,39 @@
+{
+  "name": "fupay",
+  "version": "1.1.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "blockchain",
+    "fuel",
+    "typescript"
+  ],
+  "author": "Karan Goraniya",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karnagoraniya/fupay_sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karnagoraniya/fupay_sdk/issues"
+  },
+  "homepage": "https://github.com/karnagoraniya/fupay_sdk#readme",
+  "dependencies": {
+    "fuels": "^0.94.8",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "typescript": "^5.6.2"
+  }
+}
